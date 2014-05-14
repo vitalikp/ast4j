@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="ast4j" default="build" basedir=".">
+
+	<property prefix="ast4j" file="version"/>
+	
+	<property name="src" value="root_src/src"/>
+	
+	<path id="project.class.path">
+		<!-- compile classes -->
+		<pathelement location="build/classes"/>
+		<!-- Project libs -->
+		<fileset dir="lib" includes="**/*.jar"/>
+	</path>
+	
+	<!-- compile project -->
+	<target name="compile" description="Compile project">
+		<mkdir dir="build/classes"/>
+		<javac includeantruntime="false" srcdir="${src}" includes="**" encoding="UTF-8" destdir="build/classes" source="1.6" target="1.6" debug="true" debuglevel="lines,vars,source">
+			<classpath refid="project.class.path"/>
+		</javac>
+	</target>
+
+	<!-- build project -->
+	<target name="build" depends="compile" description="Build project">
+		<mkdir dir="build/jar"/>
+		<jar destfile="build/jar/${ast4j.branch}/${ant.project.name}-${ast4j.version}.jar">
+			<manifest>
+				<attribute name="Built-By" value="${ast4j.branch}"/>
+				<attribute name="Implementation-Version" value="${ast4j.version}"/>
+			</manifest>
+			<fileset dir="build/classes"/>
+		</jar>
+		<jar destfile="build/jar/${ast4j.branch}/${ant.project.name}-${ast4j.version}-src.jar">
+			<manifest>
+				<attribute name="Built-By" value="${ast4j.branch}"/>
+				<attribute name="Implementation-Version" value="${ast4j.version}"/>
+			</manifest>
+			<fileset dir="root_src"/>
+		</jar>
+	</target>
+	
+	<!-- clean project -->
+	<target name="clean" description="Cleans this project">
+		<delete dir="build/classes" failonerror="false" />
+		<delete dir="build/META-INF" failonerror="false" />
+	</target>
+</project>
