@@ -1,6 +1,6 @@
 package org.ast4j.agi.cmd;
 
-public class HangupCmd extends BaseAgiCmd
+public class HangupCmd extends AgiCmd
 {
 	/**
      * The name of the channel to hangup or <code>null</code> for the current

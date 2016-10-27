@@ -1,6 +1,6 @@
 package org.ast4j.agi.cmd;
 
-public class ChannelStatusCmd extends BaseAgiCmd
+public class ChannelStatusCmd extends AgiCmd
 {
 	/**
      * The name of the channel to query or <code>null</code> for the current

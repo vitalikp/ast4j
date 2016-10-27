@@ -1,6 +1,6 @@
 package org.ast4j.agi.cmd;
 
-public class SetVariableCmd extends BaseAgiCmd
+public class SetVariableCmd extends AgiCmd
 {
 	/**
      * The name of the variable to set.

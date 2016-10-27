@@ -1,6 +1,6 @@
 package org.ast4j.agi.cmd;
 
-public class VerboseCmd extends BaseAgiCmd
+public class VerboseCmd extends AgiCmd
 {
 	/**
      * The message to send.
