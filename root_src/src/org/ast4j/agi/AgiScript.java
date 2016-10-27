@@ -2,6 +2,8 @@ package org.ast4j.agi;
 
 import java.io.IOException;
 
+import org.ast4j.Channel;
+
 public interface AgiScript
 {
 	/**
@@ -15,5 +17,5 @@ public interface AgiScript
 	 *
 	 * @throws IOException any exception thrown by your script will be logged.
 	 */
-	void run(AgiChannel channel) throws IOException;
+	void run(Channel channel) throws IOException;
 }
