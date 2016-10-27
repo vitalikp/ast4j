@@ -39,7 +39,7 @@ public class SetVariableCmd extends BaseAgiCmd
 	}
 
 	@Override
-	public String buildCmd()
+	public String getName()
 	{
 		return "SET VARIABLE " + escapeAndQuote(variable) + " " + escapeAndQuote(value);
 	}

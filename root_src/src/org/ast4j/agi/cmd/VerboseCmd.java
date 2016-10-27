@@ -40,7 +40,7 @@ public class VerboseCmd extends BaseAgiCmd
 	}
 
 	@Override
-	public String buildCmd()
+	public String getName()
 	{
 		return "VERBOSE " + escapeAndQuote(message) + " " + level;
 	}

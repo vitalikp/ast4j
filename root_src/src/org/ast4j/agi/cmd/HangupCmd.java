@@ -24,7 +24,7 @@ public class HangupCmd extends BaseAgiCmd
 	}
 
 	@Override
-	public String buildCmd()
+	public String getName()
 	{
 		return "HANGUP" + (channel == null ? "" : " " + escapeAndQuote(channel));
 	}

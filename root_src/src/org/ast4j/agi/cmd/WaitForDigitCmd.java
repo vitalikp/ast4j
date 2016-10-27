@@ -13,7 +13,7 @@ public class WaitForDigitCmd implements AgiCmd
 	}
 
 	@Override
-	public String buildCmd()
+	public String getName()
 	{
 		return "WAIT FOR DIGIT " + timeout;
 	}

@@ -24,7 +24,7 @@ public class ChannelStatusCmd extends BaseAgiCmd
 	}
 
 	@Override
-	public String buildCmd()
+	public String getName()
 	{
 		return "CHANNEL STATUS" + (channel == null ? "" : " " + escapeAndQuote(channel));
 	}
