@@ -2,7 +2,7 @@ package org.ast4j.agi;
 
 import java.io.IOException;
 
-public interface IAgiScript
+public interface AgiScript
 {
 	/**
      * The service method is called by the AsteriskServer whenever this
