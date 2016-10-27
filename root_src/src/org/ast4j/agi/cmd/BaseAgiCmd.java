@@ -1,5 +1,7 @@
 package org.ast4j.agi.cmd;
 
+import org.ast4j.cmd.Cmd;
+
 public abstract class BaseAgiCmd implements Cmd
 {
 	/**

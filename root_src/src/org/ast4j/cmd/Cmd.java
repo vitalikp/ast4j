@@ -1,4 +1,4 @@
-package org.ast4j.agi.cmd;
+package org.ast4j.cmd;
 
 public interface Cmd
 {
