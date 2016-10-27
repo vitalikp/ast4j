@@ -15,5 +15,5 @@ public interface AgiScript
      * 
      * @throws IOException any exception thrown by your script will be logged.
      */
-    void service(IAgiChannel channel) throws IOException;
+    void service(AgiChannel channel) throws IOException;
 }
