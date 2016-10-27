@@ -1,10 +1,10 @@
-package org.ast4j.agi;
+package org.ast4j.script;
 
 import java.io.IOException;
 
 import org.ast4j.Channel;
 
-public interface AgiScript
+public interface Script
 {
 	/**
 	 * The run method is called by the AsteriskServer whenever this
