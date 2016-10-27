@@ -1,6 +1,6 @@
 package org.ast4j.agi.cmd;
 
-public interface IAgiCmd
+public interface AgiCmd
 {
 	String buildCmd();
 }

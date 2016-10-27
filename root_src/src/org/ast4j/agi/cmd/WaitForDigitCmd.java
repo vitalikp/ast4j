@@ -1,6 +1,6 @@
 package org.ast4j.agi.cmd;
 
-public class WaitForDigitCmd implements IAgiCmd
+public class WaitForDigitCmd implements AgiCmd
 {
 	/**
      * The milliseconds to wait for the channel to receive a DTMF digit.

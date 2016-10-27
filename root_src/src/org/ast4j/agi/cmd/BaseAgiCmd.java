@@ -1,6 +1,6 @@
 package org.ast4j.agi.cmd;
 
-public abstract class BaseAgiCmd implements IAgiCmd
+public abstract class BaseAgiCmd implements AgiCmd
 {
 	/**
      * Escapes and quotes a given String according to the rules set by
